@@ -19,15 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-Scope: this license covers the original code and text of this website. It does
-not cover:
-
-- the "Almond Linux" name and the almond logo (assets/images/, favicon.ico),
-  which identify the project and are not licensed for reuse under the terms
-  above;
-- the fonts in assets/fonts/, which keep their own licenses (SIL Open Font
-  License 1.1 for Young Serif and Atkinson Hyperlegible; the Bitstream Vera and
-  Arev font licenses for DejaVu Sans Mono). See assets/fonts/README.md.

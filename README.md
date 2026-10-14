@@ -37,6 +37,6 @@ then open <http://localhost:8000>.
 
 ## License
 
-The site's own code and text are under the [MIT License](LICENSE). The Almond Linux name and logo, and the fonts in `assets/fonts/`, are not covered by it: the fonts keep their own licenses (see `assets/fonts/README.md`).
+The site's own code and text are under the [MIT License](LICENSE); see [NOTICE](NOTICE) for what it does not cover. The Almond Linux name and logo, and the fonts in `assets/fonts/`, are not covered by it: the fonts keep their own licenses (see `assets/fonts/README.md`).
 
 Almond Linux is not affiliated with Debian, Canonical, Red Hat, AlmaLinux, or any other Linux organization. Linux® is the registered trademark of Linus Torvalds in the U.S. and other countries. Debian is a registered trademark owned by Software in the Public Interest, Inc.

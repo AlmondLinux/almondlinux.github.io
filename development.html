@@ -1,27 +1,265 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Development – Almond Linux</title><meta name="description" content="Almond Linux development roadmap and technical direction.">
-<meta property="og:title" content="Development – Almond Linux"><meta property="og:description" content="Almond Linux development roadmap and technical direction."><meta property="og:type" content="website">
-<meta name="theme-color" content="#F5DEB3"><link rel="stylesheet" href="assets/css/style.css">
-<link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png"><link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
-<meta property="og:image" content="https://almondlinux.github.io/assets/images/og-image.png"><meta property="og:image:alt" content="The Almond Linux logo: a brown almond above the words Almond Linux"><meta name="twitter:card" content="summary_large_image">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Development – Almond Linux</title>
+<meta name="description" content="The Almond Linux roadmap, technical direction and development log. Almond 0.1 ‘Marcona’ is in progress; no ISO has been built yet.">
+<meta name="theme-color" content="#2B2118">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Development – Almond Linux">
+<meta property="og:description" content="The Almond Linux roadmap, technical direction and development log. Almond 0.1 ‘Marcona’ is in progress; no ISO has been built yet.">
+<meta property="og:image" content="https://almondlinux.github.io/assets/images/og-image.png">
+<meta property="og:image:alt" content="The Almond Linux logo: a brown almond above the words Almond Linux">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body><a class="skip" href="#main">Skip to content</a>
-<header><div class="bar"><a class="brand" href="index.html"><img src="assets/images/almond-mark-header.png" width="33" height="48" alt=""><span>Almond Linux</span></a><nav aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="development.html" aria-current="page">Development</a></li><li><a href="downloads.html">Downloads</a></li><li><a href="docs.html">Documentation</a></li><li><a href="https://github.com/AlmondLinux" rel="noopener">GitHub</a></li></ul></nav></div></header>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="split s57 masthead">
+  <div class="field cream bar">
+    <a class="brand" href="index.html"><img src="assets/images/almond-mark-header.png" width="33" height="48" alt=""><span>Almond Linux</span></a>
+  </div>
+  <nav class="field navcell" aria-label="Main">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="development.html" aria-current="page">Development</a></li>
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="docs.html">Documentation</a></li>
+      <li><a href="https://github.com/AlmondLinux">GitHub</a></li>
+    </ul>
+  </nav>
+</header>
+
 <main id="main">
 
-<h1>Development</h1>
-<p class="notice">All milestones are <strong>planned</strong>. None is completed.</p>
-<table><caption class="notice">Roadmap</caption><thead><tr><th scope="col">Version</th><th scope="col">Goal</th><th scope="col">Status</th></tr></thead><tbody>
-<tr><td>Almond 0.1</td><td>First bootable Debian-based ISO.</td><td>Planned</td></tr>
-<tr><td>Almond 0.2</td><td>Custom Almond branding, wallpaper, themes, and system identity.</td><td>Planned</td></tr>
-<tr><td>Almond 0.3</td><td>Customized desktop experience.</td><td>Planned</td></tr>
-<tr><td>Almond 0.5</td><td>Graphical installer and testing.</td><td>Planned</td></tr>
-<tr><td>Almond 1.0</td><td>First stable public release.</td><td>Planned</td></tr></tbody></table>
-<h2>Technical direction (intended)</h2>
-<ul><li>Base: Debian Stable</li><li>Build tool: Debian live-build</li><li>Testing: QEMU/KVM or VirtualBox, in a virtual machine before any real hardware</li></ul>
+  <div class="split s57 pagehead">
+    <div class="field cream">
+      <p class="kicker">development</p>
+      <h1>Develop&shy;ment</h1>
+    </div>
+    <div class="field dark">
+      <p class="lead">Where Almond stands, what comes next, and how we will know each step is really done.</p>
+      <p class="cap">Status ledger · 14 October 2026</p>
+      <dl class="ledger">
+        <div><dt>now</dt><dd>0.1 ‘Marcona’ – in progress</dd></div>
+        <div><dt>built</dt><dd>nothing yet</dd></div>
+        <div><dt>iso</dt><dd>none</dd></div>
+        <div><dt>base</dt><dd>Debian 13 ‘trixie’ (planned)</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <section class="split s48 dark roadmap" aria-labelledby="h-road">
+    <div class="field wide">
+      <p class="kicker">01 · roadmap</p>
+      <h2 id="h-road">Roadmap</h2>
+      <p>Five steps, from a first bootable image to a first stable public release. The first three take their codenames from Spanish almond varieties; 0.5 and 1.0 have not been named yet. Nothing here is marked done, because nothing is done yet.</p>
+    </div>
+    <div class="field rl">
+      <div class="cols" aria-hidden="true"><span>version</span><span>milestone</span><span>status</span></div>
+      <ol class="road">
+        <li class="cur">
+          <span class="ver">Almond 0.1 <span class="code">‘Marcona’</span></span>
+          <span class="what">First bootable Debian-based ISO</span>
+          <span class="state"><span class="vh">Status: </span>In progress</span>
+          <span class="det">Build configuration drafted with Debian live-build. No ISO has been built yet.</span>
+        </li>
+        <li>
+          <span class="ver">Almond 0.2 <span class="code">‘Largueta’</span></span>
+          <span class="what">Custom Almond branding, wallpaper, themes, and system identity</span>
+          <span class="state"><span class="vh">Status: </span>Planned</span>
+        </li>
+        <li>
+          <span class="ver">Almond 0.3 <span class="code">‘Valencia’</span></span>
+          <span class="what">Customized desktop experience</span>
+          <span class="state"><span class="vh">Status: </span>Planned</span>
+        </li>
+        <li>
+          <span class="ver">Almond 0.5</span>
+          <span class="what">Graphical installer and testing</span>
+          <span class="state"><span class="vh">Status: </span>Planned</span>
+        </li>
+        <li>
+          <span class="ver">Almond 1.0</span>
+          <span class="what">First stable public release</span>
+          <span class="state"><span class="vh">Status: </span>Planned</span>
+        </li>
+      </ol>
+    </div>
+    <div class="field notes">
+      <h3>How a milestone counts as done</h3>
+      <p>Every milestone has a list of evidence it has to produce before it is marked done. Until that evidence exists, the milestone stays ‘In progress’ or ‘Planned’, however close it looks.</p>
+      <p>For 0.1, that means an ISO hash, a build log, a package manifest, and repeated boot, networking and terminal checks.</p>
+      <p><a href="#h-done">What every milestone has to show</a></p>
+    </div>
+  </section>
+
+  <section class="split s84 cream" aria-labelledby="h-done">
+    <div class="field">
+      <p class="kicker">02 · definition of done</p>
+      <h2 id="h-done">Definition of done</h2>
+      <p class="lead">A milestone is done when it can be shown to work, not when it seems to.</p>
+      <p>This is the evidence each step has to produce first. It is written down before any of the work is finished, so it is clear in advance what each step has to show.</p>
+      <div class="scroll">
+        <table>
+          <caption>What has to be shown before a milestone is marked done</caption>
+          <thead>
+            <tr><th scope="col">Version</th><th scope="col">Evidence required before it is marked done</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">0.1 ‘Marcona’</th><td>An ISO hash, a build log and a package manifest; repeated boot, networking and terminal checks.</td></tr>
+            <tr><th scope="row">0.2 ‘Largueta’</th><td>An original, licensed logo and wallpaper; a contrast review of the colour palette; screenshots.</td></tr>
+            <tr><th scope="row">0.3 ‘Valencia’</th><td>Usability and regression checks of the layout, the launcher, the settings and software management.</td></tr>
+            <tr><th scope="row">0.5</th><td>Installs on disposable disks; account and permission tests; updates that persist; bootloader and recovery validation; a security review.</td></tr>
+            <tr><th scope="row">1.0</th><td>A published support matrix; maintained updates; release, source and license materials; reproducible build instructions; a support process.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="field">
+      <p class="big">Nothing is marked done yet.</p>
+      <p class="cap">Milestones · 14 October 2026</p>
+      <dl class="ledger">
+        <div><dt>done</dt><dd>none yet</dd></div>
+        <div><dt>underway</dt><dd>0.1 ‘Marcona’</dd></div>
+        <div><dt>planned</dt><dd>0.2 · 0.3 · 0.5 · 1.0</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="split s48" aria-labelledby="h-tech">
+    <div class="field dark">
+      <p class="kicker">03 · technical direction</p>
+      <h2 id="h-tech">Technical direction</h2>
+      <p class="lead">Almond starts from Debian and will be built with Debian’s own tools.</p>
+      <p>This is the direction for now. None of it has been tested on a finished image, because there is no finished image yet.</p>
+    </div>
+    <div class="field paper">
+      <p class="cap">Planned base and build</p>
+      <dl class="ledger">
+        <div><dt>base</dt><dd>Debian Stable, currently Debian 13 ‘trixie’</dd></div>
+        <div><dt>build</dt><dd>Debian live-build</dd></div>
+        <div><dt>target</dt><dd>ARM64 UEFI virtual machine (drafted)</dd></div>
+        <div><dt>testing</dt><dd>virtual machines, before any real hardware</dd></div>
+        <div><dt>apple</dt><dd>native install on Apple Silicon Macs: not a goal</dd></div>
+      </dl>
+      <div class="prose">
+        <h3>Debian underneath</h3>
+        <p>The planned base is <a href="https://www.debian.org/">Debian</a> Stable, currently Debian 13 ‘trixie’. Almond’s own work will sit on top of Debian’s packages, and every upstream package keeps its own license.</p>
+        <h3>Built with live-build</h3>
+        <p>Images will be built with <a href="https://wiki.debian.org/DebianLive">Debian live-build</a>, Debian’s tool for building live system images. The first draft of the build configuration targets a 64-bit ARM (ARM64) UEFI virtual machine. It has not produced an image yet.</p>
+        <h3>Virtual machines first</h3>
+        <p>Every build will be tested in a virtual machine before it goes near real hardware:</p>
+        <ul>
+          <li>QEMU-based tools, such as QEMU/KVM or UTM;</li>
+          <li>VirtualBox, where it supports the architecture.</li>
+        </ul>
+        <h3>ARM64 is not Apple hardware</h3>
+        <p>The ARM64 virtual machine is only the first target in the drafted configuration. Generic ARM64 support does not mean support for Apple hardware, and native installation on Apple Silicon Macs is not a goal of any planned version.</p>
+        <h3>Long term: going independent</h3>
+        <p>Debian is the starting point, not the destination. Versions 0.1 to 1.0 are built on Debian Stable. After that, Almond plans to replace what it borrows, one layer at a time:</p>
+        <ol>
+          <li>An Almond package repository for Almond’s own software, on top of Debian.</li>
+          <li>Building packages from source on Almond’s own build system.</li>
+          <li>A fully independent Almond, no longer based on Debian.</li>
+        </ol>
+        <p>Independence has a real cost: every package then needs its own maintenance, security fixes and build servers. Each step will only start once the one before it works and can be maintained. No dates are promised.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="split s57" aria-labelledby="h-ed">
+    <div class="field cream">
+      <p class="kicker">04 · editions</p>
+      <h2 id="h-ed">Editions: open decisions</h2>
+      <p class="lead">Two editions are defined: AALLDM for newer PCs and AALDM for older and low-power 64-bit PCs. Most of what will set them apart has not been decided yet.</p>
+      <p>These are the open questions for each one, listed so that nobody mistakes a plan for a decision. Which edition reaches 0.1 first has not been decided either.</p>
+      <p class="big">When we say an edition is light or fast, we will publish the numbers behind it – idle memory, boot time, disk use – with the method, so anyone can repeat the test.</p>
+    </div>
+    <div class="field dark">
+      <div class="edition">
+        <p class="cap">Edition · large</p>
+        <p class="acro">AALLDM</p>
+        <p class="expansion">A All Large Linux Distribution Model</p>
+        <p>The large edition, for newer PCs.</p>
+        <dl class="ledger">
+          <div><dt>desktop</dt><dd>not chosen</dd></div>
+          <div><dt>hardware</dt><dd>minimum not decided</dd></div>
+          <div><dt>cpu</dt><dd>architectures open</dd></div>
+          <div><dt>0.1 first</dt><dd>not decided</dd></div>
+        </dl>
+      </div>
+      <div class="edition">
+        <p class="cap">Edition · little</p>
+        <p class="acro">AALDM</p>
+        <p class="expansion">A All Little Distribution Model</p>
+        <p>The little edition, for older and low-power 64-bit PCs. Debian 13 no longer supports installing on 32-bit PCs, so AALDM will need a 64-bit PC.</p>
+        <dl class="ledger">
+          <div><dt>desktop</dt><dd>not chosen</dd></div>
+          <div><dt>hardware</dt><dd>minimum not decided</dd></div>
+          <div><dt>cpu</dt><dd>architectures open · 64-bit only</dd></div>
+          <div><dt>0.1 first</dt><dd>not decided</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <div class="split s84">
+    <section class="field paper" aria-labelledby="h-log">
+      <p class="kicker">05 · development log</p>
+      <h2 id="h-log">Development log</h2>
+      <p>Dated entries for things that have actually happened, newest first. Plans live on the roadmap above; this list is only for what is already true.</p>
+      <ol class="logbook" reversed>
+        <li><time datetime="2026-10-14">14 Oct 2026</time> First public repositories published on GitHub under the MIT License: almond-linux (the build configuration) and almondlinux.github.io (this website).</li>
+        <li><time datetime="2026-10-14">14 Oct 2026</time> Long-term direction decided: start on Debian, then become a fully independent distribution step by step.</li>
+        <li><time datetime="2026-10-14">14 Oct 2026</time> Release codenames chosen from Spanish almond varieties: ‘Marcona’ for 0.1, ‘Largueta’ for 0.2 and ‘Valencia’ for 0.3.</li>
+        <li><time datetime="2026-10-14">14 Oct 2026</time> Two editions defined: AALLDM for newer PCs and AALDM for older and low-power 64-bit PCs.</li>
+        <li><time datetime="2026-10-14">14 Oct 2026</time> The AlmondLinux organisation is created on GitHub.</li>
+        <li><time datetime="2026-10-14">14 Oct 2026</time> The almond logo is adopted as the official mark.</li>
+        <li><time datetime="2026-10-14">14 Oct 2026</time> First draft of the build configuration written: a live-build setup for an ARM64 UEFI virtual machine, a desktop package list, an image-identity hook and a guarded build script. Checked so far: shell syntax, and that the build script refuses to run outside Linux. Not yet checked: package resolution, image generation, booting, networking, security defaults and installation.</li>
+      </ol>
+      <p class="aside">Newest first. That’s the whole log so far.</p>
+    </section>
+    <section class="field cream stack" aria-labelledby="h-follow">
+      <img class="mark" src="assets/images/almond-mark.png" width="220" height="320" alt="">
+      <div>
+        <p class="kicker">06 · follow along</p>
+        <h2 id="h-follow">Follow along</h2>
+        <p>The main repository is <a href="https://github.com/AlmondLinux/almond-linux" class="mono">github.com/<wbr>AlmondLinux/<wbr>almond-linux</a>. Watch it on GitHub to follow every change.</p>
+        <a class="btn" href="https://github.com/AlmondLinux/almond-linux"><span>Follow Almond on GitHub</span> <span class="arr" aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </div>
+
 </main>
-<footer><p><strong>Almond Linux</strong><br>AALLDM / AALDM</p>
-<p><a href="https://github.com/AlmondLinux" rel="noopener">GitHub</a> · <a href="docs.html#license">License information</a> · <a href="docs.html#contact">Contact</a></p>
-<p>Almond Linux is an independent project and is not affiliated with Debian, Canonical, Red Hat, or any other Linux organization. This site uses no cookies or trackers.</p></footer>
-</body></html>
+
+<footer class="split s57 dark foot">
+  <div class="field">
+    <p class="fname">Almond Linux</p>
+    <p class="mono">AALLDM / AALDM</p>
+    <dl class="expand">
+      <div><dt>AALLDM</dt><dd>A All Large Linux Distribution Model</dd></div>
+      <div><dt>AALDM</dt><dd>A All Little Distribution Model</dd></div>
+    </dl>
+  </div>
+  <div class="field">
+    <ul class="flinks">
+      <li><a href="https://github.com/AlmondLinux">GitHub organisation</a></li>
+      <li><a href="docs.html#license">License information</a></li>
+      <li><a href="docs.html#contact">Contact</a></li>
+    </ul>
+    <p>Almond Linux is an independent project and is not affiliated with Debian, Canonical, Red Hat, AlmaLinux, or any other Linux organization.</p>
+    <p>This site uses no cookies, analytics or trackers.</p>
+    <p class="legal">Linux® is the registered trademark of Linus Torvalds in the U.S. and other countries. Debian is a registered trademark owned by Software in the Public Interest, Inc.</p>
+  </div>
+</footer>
+</body>
+</html>

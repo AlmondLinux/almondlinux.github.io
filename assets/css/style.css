@@ -5,15 +5,20 @@ body{margin:0;background:var(--paper);color:var(--dark);font:1rem/1.6 Georgia,"T
 a{color:#6B3F14}a:hover{color:var(--dark)}
 a:focus-visible,button:focus-visible{outline:3px solid var(--dark);outline-offset:2px}
 .skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:var(--cream);padding:.5rem;z-index:9}
-header{background:var(--dark);border-bottom:6px solid var(--brown)}
-.bar{max-width:60rem;margin:0 auto;padding:.75rem 1rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem}
-.brand{color:var(--cream);font:700 1.5rem Georgia,serif;text-decoration:none;letter-spacing:.03em}
-.brand:hover{color:var(--almond)}
+header{background:var(--cream);border-bottom:6px solid var(--brown)}
+.bar{max-width:60rem;margin:0 auto;padding:.6rem 1rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem}
+.brand{display:flex;align-items:center;gap:.55rem;color:var(--dark);font:700 1.5rem/1.2 "Trebuchet MS",Verdana,sans-serif;text-decoration:none}
+.brand img{display:block}
+.brand:hover{color:var(--brown)}
 nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.25rem}
-nav a{display:block;color:var(--cream);text-decoration:none;padding:.4rem .7rem;border:1px solid transparent}
-nav a:hover,nav a[aria-current=page]{background:var(--brown);border-color:var(--almond);color:#fff}
+nav a{display:block;color:var(--dark);text-decoration:none;padding:.4rem .7rem;border:1px solid transparent}
+nav a:hover{background:var(--brown);border-color:var(--dark);color:#fff}
+nav a[aria-current=page]{background:var(--dark);color:var(--cream)}
 main{max-width:60rem;margin:0 auto;padding:1.5rem 1rem 2.5rem}
 .hero{background:var(--cream);border:2px solid var(--brown);padding:2rem 1.25rem;text-align:center;margin-bottom:2rem}
+.hero-mark{display:block;margin:0 auto 1rem;height:auto}
+.logo-full{display:block;max-width:100%;height:auto}
+.roadmap{padding-left:1.25rem}
 .hero h1{font-size:clamp(2rem,8vw,3.2rem);letter-spacing:.12em;margin:0;color:var(--brown)}
 .tag{font-size:1.3rem;font-style:italic;margin:.25rem 0 1rem}
 .status{display:inline-block;background:var(--dark);color:var(--cream);padding:.25rem .75rem;font:.9rem/1.4 monospace}

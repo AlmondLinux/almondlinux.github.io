@@ -17,6 +17,7 @@ docs.html           documentation status, license, trademarks, contact
 assets/css/         style.css (the whole design) and fonts.css
 assets/fonts/       self-hosted fonts with their license files
 assets/images/      the official logo, favicon and social preview image
+assets/images/almond-pure/  Almond Pure icons copied from almond-linux (MIT)
 .nojekyll           tells GitHub Pages to serve the files as they are
 ```
 

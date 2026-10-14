@@ -51,14 +51,14 @@
         <p class="lede">A new Linux distribution project built around simplicity, stability, and freedom.</p>
         <p class="lede strong">Currently in early development.</p>
         <p class="hero-cta"><a class="btn" href="https://github.com/AlmondLinux/almond-linux"><span>Follow Almond on GitHub</span> <span class="arr" aria-hidden="true">→</span></a></p>
-        <p class="cap">Status ledger · 14 October 2026</p>
+        <p class="cap">Status ledger · 15 October 2026</p>
         <dl class="ledger">
           <div><dt>project</dt><dd>Almond Linux</dd></div>
           <div><dt>status</dt><dd>early development</dd></div>
           <div><dt>base</dt><dd>Debian 13 ‘trixie’ (planned)</dd></div>
           <div><dt>editions</dt><dd>AALLDM · AALDM (planned)</dd></div>
           <div><dt>iso</dt><dd>none yet</dd></div>
-          <div><dt>next</dt><dd>0.1 ‘Marcona’ – first bootable ISO</dd></div>
+          <div><dt>next</dt><dd>0.1 ‘Marcona’ – first AALDM ISO</dd></div>
         </dl>
       </div>
     </div>
@@ -70,20 +70,23 @@
       <h2 id="h-about">About Almond</h2>
       <div class="indent">
         <p class="lead">Almond Linux is an independent Linux distribution project focused on simplicity, stability, performance, and freedom. The initial operating system will be based on Debian. The long-term goal is for Almond to become a fully independent distribution of its own.</p>
-        <p>Right now Almond is a plan, a logo, two public repositories and a first draft of the build configuration. This site tells you exactly where things stand, and nothing more than that.</p>
+        <p>Right now Almond is a plan, a logo, two public repositories, an untested AALDM build configuration, and the first untested Almond Pure source files: icons, window themes, the launcher and wallpapers. Nothing has been built yet. This site tells you exactly where things stand, and nothing more than that.</p>
         <p><a href="about.html">More about the project</a></p>
       </div>
     </div>
     <div class="field cream log">
       <h3>Logbook</h3>
       <ol class="logbook" reversed>
+        <li><time datetime="2026-10-14">14 Oct 2026</time> AALDM build configuration and the first Almond Pure source files published: icon theme with folder colours, window themes, the Almond Launcher and wallpapers. Not built or tested yet.</li>
+        <li><time datetime="2026-10-14">14 Oct 2026</time> AALDM chosen as the first edition: LXQt with the Openbox window manager on X11, for 64-bit PCs.</li>
+        <li><time datetime="2026-10-14">14 Oct 2026</time> Almond Pure, the visual design for AALDM, approved as a set of design mockups.</li>
         <li><time datetime="2026-10-14">14 Oct 2026</time> First public repositories published on GitHub, under the MIT License: the build configuration and this website.</li>
         <li><time datetime="2026-10-14">14 Oct 2026</time> Release codenames chosen: Spanish almond varieties, starting with ‘Marcona’.</li>
         <li><time datetime="2026-10-14">14 Oct 2026</time> Two editions defined: AALLDM for newer PCs, AALDM for older ones.</li>
         <li><time datetime="2026-10-14">14 Oct 2026</time> The AlmondLinux organisation is created on GitHub.</li>
         <li><time datetime="2026-10-14">14 Oct 2026</time> The almond logo is adopted as the official mark.</li>
       </ol>
-      <p class="aside">Newest first. The full log is on the <a href="development.html#h-log">development page</a>.</p>
+      <p class="aside">A selection, newest first. The full log is on the <a href="development.html#h-log">development page</a>.</p>
     </div>
   </section>
 
@@ -107,7 +110,7 @@
       <p class="kicker">03 · editions</p>
       <h2 id="h-editions">Two editions, one Almond</h2>
       <p class="lead">A new PC and a ten-year-old laptop deserve different systems. Almond is planned in two editions, built from the same base and the same values.</p>
-      <p>Both are planned. Neither has been built yet, and the details below will only firm up as the work does.</p>
+      <p>AALDM is in progress as 0.1 ‘Marcona’; AALLDM is planned. Neither has been built yet, and the details below will only firm up as the work does.</p>
     </div>
     <div class="field dark">
       <div class="edition">
@@ -125,11 +128,11 @@
         <p class="cap">Edition · little</p>
         <p class="acro">AALDM</p>
         <p class="expansion">A All Little Distribution Model</p>
-        <p>The light Almond: made for older and low-power PCs. The aim is a system that stays quick on hardware other systems have left behind.</p>
+        <p>The light Almond: made for older and low-power PCs. The aim is a system that stays quick on hardware other systems have left behind. It is the edition being built first.</p>
         <dl class="ledger">
           <div><dt>for</dt><dd>older and low-power 64-bit PCs</dd></div>
-          <div><dt>desktop</dt><dd>not chosen yet</dd></div>
-          <div><dt>status</dt><dd>planned · no ISO</dd></div>
+          <div><dt>desktop</dt><dd>LXQt + Openbox (planned)</dd></div>
+          <div><dt>status</dt><dd>in progress · no ISO</dd></div>
         </dl>
       </div>
     </div>
@@ -148,7 +151,7 @@
           <span class="ver">Almond 0.1 <span class="code">‘Marcona’</span></span>
           <span class="what">First bootable Debian-based ISO</span>
           <span class="state"><span class="vh">Status: </span>In progress</span>
-          <span class="det">Build configuration drafted with Debian live-build. No ISO has been built yet.</span>
+          <span class="det">AALDM build configuration written with Debian live-build. No ISO has been built yet.</span>
         </li>
         <li>
           <span class="ver">Almond 0.2 <span class="code">‘Largueta’</span></span>
@@ -177,9 +180,10 @@
       <ul>
         <li>Base: Debian Stable, currently Debian 13 ‘trixie’.</li>
         <li>Built with Debian live-build.</li>
-        <li>First target in the drafted configuration: a 64-bit ARM (ARM64) UEFI virtual machine.</li>
+        <li>First edition: AALDM, for 64-bit PCs. The plan is one ISO for both older BIOS PCs and newer UEFI PCs.</li>
+        <li>Desktop: LXQt with the Openbox window manager on X11, chosen to keep memory use low.</li>
+        <li>Goals: under 300 MB of memory when idle, and PCs with 1 GB where feasible. Targets, not measurements.</li>
         <li>Tested in virtual machines before it goes near real hardware.</li>
-        <li>Which edition reaches 0.1 first has not been decided.</li>
       </ul>
       <h3>After 1.0: going independent</h3>
       <p>Debian is the starting point, not the destination. Step by step, Almond plans to replace what it borrows:</p>

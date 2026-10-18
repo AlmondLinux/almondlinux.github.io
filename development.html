@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Development – Almond Linux</title>
-<meta name="description" content="The Almond Linux roadmap, technical direction and development log. Almond 0.1 ‘Marcona’ is in progress; no ISO has been built yet.">
+<meta name="description" content="The Almond Linux roadmap, technical direction and development log. Almond 0.1 ‘Marcona’ is in progress; a first test ISO has booted in a virtual machine.">
 <meta name="theme-color" content="#2B2118">
 <meta name="color-scheme" content="light">
 <link rel="icon" href="favicon.ico?v=2" sizes="48x48">
@@ -15,7 +15,7 @@
 <link rel="manifest" href="site.webmanifest?v=2">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Development – Almond Linux">
-<meta property="og:description" content="The Almond Linux roadmap, technical direction and development log. Almond 0.1 ‘Marcona’ is in progress; no ISO has been built yet.">
+<meta property="og:description" content="The Almond Linux roadmap, technical direction and development log. Almond 0.1 ‘Marcona’ is in progress; a first test ISO has booted in a virtual machine.">
 <meta property="og:image" content="https://almondlinux.github.io/assets/images/og-image.png">
 <meta property="og:image:alt" content="The Almond Linux logo: a brown almond above the words Almond Linux">
 <meta name="twitter:card" content="summary_large_image">
@@ -73,7 +73,7 @@
           <span class="ver">Almond 0.1 <span class="code">‘Marcona’</span></span>
           <span class="what">First bootable Debian-based ISO</span>
           <span class="state"><span class="vh">Status: </span>In progress</span>
-          <span class="det">Build configuration drafted with Debian live-build. No ISO has been built yet.</span>
+          <span class="det">First test ISO built and booted in a VirtualBox virtual machine on 17 October 2026. Still to do: a real PC, the full memory measurements and the remaining checks.</span>
         </li>
         <li>
           <span class="ver">Almond 0.2 <span class="code">‘Largueta’</span></span>
@@ -256,6 +256,8 @@
       <h2 id="h-log">Development log</h2>
       <p>Dated entries for things that have actually happened, newest first. Plans live on the roadmap above; this list is only for what is already true.</p>
       <ol class="logbook" reversed>
+        <li><time datetime="2026-10-18">18 Oct 2026</time> The AALLDM visual design is approved as a set of design mockups. No AALLDM system has been built.</li>
+        <li><time datetime="2026-10-17">17 Oct 2026</time> First AALDM test ISO built, and booted in a VirtualBox virtual machine in legacy BIOS and UEFI mode. Idle memory in that single test: 413 MiB with 2 GB of RAM, above the 300 MB target (<a href="https://github.com/AlmondLinux/almond-linux/blob/main/tests/results/2026-10-17-vm/RESULTS.md">test report</a>). It is an experiment: not released and not tried on a real PC.</li>
         <li><time datetime="2026-10-14">14 Oct 2026</time> AALDM build configuration and the first Almond Pure source files published: icon theme with folder colours, window themes, the Almond Launcher and wallpapers. Not built or tested yet.</li>
         <li><time datetime="2026-10-14">14 Oct 2026</time> AALDM chosen as the first edition: LXQt with the Openbox window manager on X11, for 64-bit PCs.</li>
         <li><time datetime="2026-10-14">14 Oct 2026</time> Almond Pure, the visual design for AALDM, approved as a set of design mockups.</li>

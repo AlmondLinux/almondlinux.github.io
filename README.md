@@ -6,10 +6,11 @@ Almond Linux is an independent Linux distribution project in early development. 
 
 ## How the site is built
 
-Plain HTML and one CSS file. No JavaScript, no build step, no frameworks, no cookies, no analytics and no third-party requests: the fonts are hosted here too.
+Plain HTML and CSS, no build step, no frameworks, no cookies, no analytics and no third-party requests: the fonts are hosted here too. The homepage is a scroll showcase with one small script (assets/js/showcase.js) for its scroll effects; it shows everything as a static page without JavaScript, and respects reduced motion. The inner pages use no JavaScript.
 
 ```
-index.html          home
+index.html          home: the scroll showcase (assets/css/showcase.css, assets/js/showcase.js, assets/showcase/)
+classic.html        the previous homepage, kept as a backup
 about.html          about the project, editions, names, logo
 development.html    roadmap, technical direction, development log
 downloads.html      editions and release status (no ISO yet)

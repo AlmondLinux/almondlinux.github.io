@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Almond Linux – Simple. Powerful. Yours.</title>
-<meta name="description" content="Almond Linux is an independent Linux distribution project, planned to be based on Debian, with two editions: AALLDM for newer PCs and AALDM for older ones. It is in early development: a first test ISO has booted in a virtual machine, and nothing has been released.">
-<meta name="theme-color" content="#2B2118">
-<meta name="color-scheme" content="light">
+<meta name="description" content="Almond Linux is an independent Linux distribution project in two editions: AALDM for older 64-bit PCs and AALLDM for newer ones. Early development; nothing released yet.">
+<meta name="theme-color" content="#14100c">
+<meta name="color-scheme" content="dark">
+<script>document.documentElement.classList.add('js')</script>
 <link rel="icon" href="favicon.ico?v=2" sizes="48x48">
 <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png?v=2">
@@ -15,245 +16,296 @@
 <link rel="manifest" href="site.webmanifest?v=2">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Almond Linux – Simple. Powerful. Yours.">
-<meta property="og:description" content="An independent, Debian-based Linux distribution project in early development.">
+<meta property="og:description" content="An independent Linux distribution project in two editions, AALDM and AALLDM. Early development.">
 <meta property="og:image" content="https://almondlinux.github.io/assets/images/og-image.png">
 <meta property="og:image:alt" content="The Almond Linux logo: a brown almond above the words Almond Linux">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="assets/css/fonts.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="preload" href="assets/fonts/newsreader-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/showcase.css">
+<script src="assets/js/showcase.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-
-<header class="split s57 masthead">
-  <div class="field cream bar">
-    <a class="brand" href="index.html"><img src="assets/images/almond-mark-header.png" width="33" height="48" alt=""><span>Almond Linux</span></a>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/showcase/svg/almond-mark-mono-light.svg" alt="" width="18" height="26">Almond Linux</a>
+    <nav aria-label="Main">
+      <a href="#aaldm">AALDM</a>
+      <a href="#aalldm">AALLDM</a>
+      <a href="about.html">About</a>
+      <a class="opt" href="development.html">Development</a>
+      <a class="opt" href="downloads.html">Downloads</a>
+      <a class="opt" href="docs.html">Docs</a>
+    </nav>
   </div>
-  <nav class="field navcell" aria-label="Main">
-    <ul>
-      <li><a href="index.html" aria-current="page">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="development.html">Development</a></li>
-      <li><a href="downloads.html">Downloads</a></li>
-      <li><a href="docs.html">Documentation</a></li>
-      <li><a href="https://github.com/AlmondLinux">GitHub</a></li>
-    </ul>
-  </nav>
 </header>
 
 <main id="main">
-
-  <div class="split s57 hero">
-    <div class="field cream stack">
-      <img class="mark" src="assets/images/almond-mark.png" width="220" height="320" alt="">
-      <h1><span>Almond</span> <span>Linux</span></h1>
-    </div>
-    <div class="field dark stack">
-      <p class="tagline"><span>Simple.</span> <span>Powerful.</span> <span>Yours.</span></p>
-      <div>
-        <p class="lede">A new Linux distribution project built around simplicity, stability, and freedom.</p>
-        <p class="lede strong">Currently in early development.</p>
-        <p class="hero-cta"><a class="btn" href="https://github.com/AlmondLinux/almond-linux"><span>Follow Almond on GitHub</span> <span class="arr" aria-hidden="true">→</span></a></p>
-        <p class="cap">Status ledger · 15 October 2026</p>
-        <dl class="ledger">
-          <div><dt>project</dt><dd>Almond Linux</dd></div>
-          <div><dt>status</dt><dd>early development</dd></div>
-          <div><dt>base</dt><dd>Debian 13 ‘trixie’ (planned)</dd></div>
-          <div><dt>editions</dt><dd>AALLDM · AALDM (planned)</dd></div>
-          <div><dt>iso</dt><dd>none yet</dd></div>
-          <div><dt>next</dt><dd>0.1 ‘Marcona’ – first AALDM ISO</dd></div>
-        </dl>
+  <section class="hero" id="top" data-p>
+    <div class="stage">
+      <div class="glow"></div>
+      <div class="inner wrap">
+        <img class="mark" src="assets/showcase/svg/almond-mark-mono-light.svg" alt="The Almond Linux mark" width="110" height="161">
+        <h1>Almond <em>Linux</em></h1>
+        <p class="sub">Simple. Powerful. Yours.</p>
       </div>
-    </div>
-  </div>
-
-  <section class="split s84" aria-labelledby="h-about">
-    <div class="field paper">
-      <p class="kicker">01 · about</p>
-      <h2 id="h-about">About Almond</h2>
-      <div class="indent">
-        <p class="lead">Almond Linux is an independent Linux distribution project focused on simplicity, stability, performance, and freedom. The initial operating system will be based on Debian. The long-term goal is for Almond to become a fully independent distribution of its own.</p>
-        <p>Right now Almond is a logo, two public repositories, and an AALDM build that produced its first test ISO on 17 October 2026. That ISO booted in a VirtualBox virtual machine, in both legacy BIOS and UEFI mode. It is an experiment: not released, not offered for download, and not yet tried on a real PC. This site tells you exactly where things stand, and nothing more than that.</p>
-        <p><a href="about.html">More about the project</a></p>
-      </div>
-    </div>
-    <div class="field cream log">
-      <h3>Logbook</h3>
-      <ol class="logbook" reversed>
-        <li><time datetime="2026-10-18">18 Oct 2026</time> The AALLDM visual design is approved as a set of design mockups. No AALLDM system has been built.</li>
-        <li><time datetime="2026-10-17">17 Oct 2026</time> First AALDM test ISO built, and booted in a VirtualBox virtual machine in legacy BIOS and UEFI mode. Idle memory in that single test: 413 MiB with 2 GB of RAM, above the 300 MB target (<a href="https://github.com/AlmondLinux/almond-linux/blob/main/tests/results/2026-10-17-vm/RESULTS.md">test report</a>). It is an experiment: not released and not tried on a real PC.</li>
-        <li><time datetime="2026-10-14">14 Oct 2026</time> AALDM build configuration and the first Almond Pure source files published: icon theme with folder colours, window themes, the Almond Launcher and wallpapers. Not built or tested yet.</li>
-        <li><time datetime="2026-10-14">14 Oct 2026</time> AALDM chosen as the first edition: LXQt with the Openbox window manager on X11, for 64-bit PCs.</li>
-        <li><time datetime="2026-10-14">14 Oct 2026</time> Almond Pure, the visual design for AALDM, approved as a set of design mockups.</li>
-        <li><time datetime="2026-10-14">14 Oct 2026</time> First public repositories published on GitHub, under the MIT License: the build configuration and this website.</li>
-        <li><time datetime="2026-10-14">14 Oct 2026</time> Release codenames chosen: Spanish almond varieties, starting with ‘Marcona’.</li>
-        <li><time datetime="2026-10-14">14 Oct 2026</time> Two editions defined: AALLDM for newer PCs, AALDM for older ones.</li>
-        <li><time datetime="2026-10-14">14 Oct 2026</time> The AlmondLinux organisation is created on GitHub.</li>
-        <li><time datetime="2026-10-14">14 Oct 2026</time> The almond logo is adopted as the official mark.</li>
-      </ol>
-      <p class="aside">A selection, newest first. The full log is on the <a href="development.html#h-log">development page</a>.</p>
+      <p class="scroll-cue">Scroll</p>
     </div>
   </section>
 
-  <section class="split s48" aria-labelledby="h-vision">
-    <div class="field dark">
-      <p class="kicker">02 · vision</p>
-      <h2 id="h-vision">Our vision</h2>
-      <p>What we want Almond to become in the long run. These are goals for the finished system, not features you can use today.</p>
+  <section class="opener" id="aaldm" data-p>
+    <div class="stage">
+      <img class="wall" src="assets/showcase/svg/almond-pure-light.svg" alt="" width="1920" height="1080">
+      <div class="copy wrap">
+        <p class="eyebrow">Edition one · in development</p>
+        <h2>AALDM</h2>
+        <p class="expansion">A All Little Distribution Model</p>
+        <p class="lede">The light Almond, made for the PCs that other systems left behind.</p>
+      </div>
     </div>
-    <div class="field paper">
-      <dl class="goals">
-        <div class="goal"><dt>Simple.</dt><dd>A clean desktop with sensible defaults. Someone new to Linux should be able to get going without reading a manual.</dd></div>
-        <div class="goal"><dt>Powerful.</dt><dd>The whole Debian package archive underneath, for people who want to go further.</dd></div>
-        <div class="goal"><dt>Yours.</dt><dd>Free and open-source software, no tracking, and nothing you can’t change.</dd></div>
+  </section>
+
+  <section class="story" aria-label="Almond Pure, the look of AALDM">
+    <div class="wrap grid">
+      <div class="steps">
+        <article class="step" data-shot="0" data-name="Almond Pure Light">
+          <p class="num">ALMOND PURE · LIGHT</p>
+          <h3>A desktop that feels warm.</h3>
+          <p>Cream surfaces, soft leaves and a slim top bar that stays out of the way. Files opens to the folders you use, with Places on the left.</p>
+          <figure class="inline-shot"><span class="chip">Design concept</span><img src="assets/showcase/img/pure-light-desktop.webp" alt="Design concept: Almond Pure Light desktop with the Files window" width="704" height="402" loading="lazy"></figure>
+        </article>
+        <article class="step" data-shot="1" data-name="Almond Pure Dark · Settings">
+          <p class="num">ALMOND PURE · DARK</p>
+          <h3>Or quiet and dark.</h3>
+          <p>The same desktop at night. Settings keeps every visual choice in one calm window: theme, accent colour, icon style and interface scale.</p>
+          <figure class="inline-shot"><span class="chip">Design concept</span><img src="assets/showcase/img/pure-dark-settings.webp" alt="Design concept: Almond Pure Dark desktop with Settings open on Appearance" width="704" height="378" loading="lazy"></figure>
+        </article>
+        <article class="step" data-shot="2" data-name="Almond Launcher">
+          <p class="num">ALMOND LAUNCHER</p>
+          <h3>Everything, one key away.</h3>
+          <p>Press Super and start typing. The launcher finds your apps, recent files and power options, then gets out of the way.</p>
+          <figure class="inline-shot"><span class="chip">Design concept</span><img src="assets/showcase/img/launcher.webp" alt="Design concept: the Almond Launcher with apps, recent files and power controls" width="552" height="384" loading="lazy"></figure>
+        </article>
+        <article class="step" data-shot="3" data-name="Almond Files · Almond Fold">
+          <p class="num">ALMOND FILES · ALMOND FOLD</p>
+          <h3>Your files, in order.</h3>
+          <p>Folders wear their purpose: green for Downloads, red for Music, plum for Videos. A dock on the left keeps Home, Applications, Places and Settings close.</p>
+          <figure class="inline-shot"><span class="chip">Design concept</span><img src="assets/showcase/img/pure-dark-desktop.webp" alt="Design concept: dark Almond desktop with a side dock and the Files window" width="898" height="465" loading="lazy"></figure>
+        </article>
+        <article class="step" data-shot="4" data-name="Application menu · Calendar">
+          <p class="num">ALMOND PURE · MENU</p>
+          <h3>Calm, even when busy.</h3>
+          <p>The application menu sorts programs into plain groups, and the calendar keeps notifications beside the date instead of over your work.</p>
+          <figure class="inline-shot"><span class="chip">Design concept</span><img src="assets/showcase/img/pure-menu-calendar.webp" alt="Design concept: application menu and calendar with notifications" width="704" height="240" loading="lazy"></figure>
+        </article>
+      </div>
+      <div class="frame-col" aria-hidden="true">
+        <div class="frame">
+          <span class="chip">Design concept</span>
+          <div class="screen">
+            <img class="on" src="assets/showcase/img/pure-light-desktop.webp" alt="" width="704" height="402">
+            <img src="assets/showcase/img/pure-dark-settings.webp" alt="" width="704" height="378">
+            <img class="contain" src="assets/showcase/img/launcher.webp" alt="" width="552" height="384">
+            <img src="assets/showcase/img/pure-dark-desktop.webp" alt="" width="898" height="465">
+            <img class="contain" src="assets/showcase/img/pure-menu-calendar.webp" alt="" width="704" height="240">
+          </div>
+          <p class="caption">Almond Pure Light</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="real" aria-labelledby="h-real">
+    <div class="wrap">
+      <div class="real-head">
+        <p class="eyebrow">Not a concept</p>
+        <h2 id="h-real">This part is real.</h2>
+        <p class="muted">The first AALDM test build, running in a VirtualBox virtual machine on 17 October 2026. Plainer than the design for now: the Almond Pure look arrives piece by piece.</p>
+      </div>
+      <div class="real-row">
+        <figure><img src="assets/showcase/img/real-boot.webp" alt="Real screenshot: the Almond Linux boot menu with the almond logo" width="800" height="600" loading="lazy"><figcaption>Boot menu (UEFI)</figcaption></figure>
+        <figure class="wide"><img src="assets/showcase/img/real-desktop.webp" alt="Real screenshot: the AALDM desktop with the Almond Pure Light wallpaper" width="1280" height="800" loading="lazy"><figcaption>The desktop, Almond Pure Light wallpaper</figcaption></figure>
+        <figure><img src="assets/showcase/img/real-launcher.webp" alt="Real screenshot: the Almond Launcher open on the AALDM desktop" width="1280" height="800" loading="lazy"><figcaption>Almond Launcher, opened with Super</figcaption></figure>
+      </div>
+      <p class="real-note">Real screenshots · VirtualBox · 17 October 2026</p>
+    </div>
+  </section>
+
+  <section class="icons" data-p aria-label="Almond Pure icons">
+    <div class="stage">
+      <div class="icon-grid">
+        <img src="assets/showcase/svg/user-home.svg" alt="Home folder" width="64" height="64">
+        <img src="assets/showcase/svg/folder-documents.svg" alt="Documents folder" width="64" height="64">
+        <img src="assets/showcase/svg/folder-download.svg" alt="Downloads folder" width="64" height="64">
+        <img src="assets/showcase/svg/folder-pictures.svg" alt="Pictures folder" width="64" height="64">
+        <img src="assets/showcase/svg/folder-music.svg" alt="Music folder" width="64" height="64">
+        <img src="assets/showcase/svg/folder-videos.svg" alt="Videos folder" width="64" height="64">
+        <img src="assets/showcase/svg/user-desktop.svg" alt="Desktop folder" width="64" height="64">
+        <img src="assets/showcase/svg/folder-projects.svg" alt="Projects folder" width="64" height="64">
+        <img src="assets/showcase/svg/almond-launch.svg" alt="Almond Launcher" width="64" height="64">
+        <img src="assets/showcase/svg/system-file-manager.svg" alt="Files" width="64" height="64">
+        <img src="assets/showcase/svg/utilities-terminal.svg" alt="Terminal" width="64" height="64">
+        <img src="assets/showcase/svg/preferences-system.svg" alt="Settings" width="64" height="64">
+        <img src="assets/showcase/svg/system-software-install.svg" alt="Software" width="64" height="64">
+        <img src="assets/showcase/svg/system-software-update.svg" alt="Updates" width="64" height="64">
+        <img src="assets/showcase/svg/web-browser.svg" alt="Web browser" width="64" height="64">
+        <img src="assets/showcase/svg/accessories-text-editor.svg" alt="Text editor" width="64" height="64">
+        <img src="assets/showcase/svg/accessories-calculator.svg" alt="Calculator" width="64" height="64">
+        <img src="assets/showcase/svg/x-office-calendar.svg" alt="Calendar" width="64" height="64">
+        <img src="assets/showcase/svg/system-search.svg" alt="Search" width="64" height="64">
+        <img src="assets/showcase/svg/application-pdf.svg" alt="PDF document" width="64" height="64">
+        <img src="assets/showcase/svg/network-wireless-signal-excellent.svg" alt="Wi-Fi" width="64" height="64">
+        <img src="assets/showcase/svg/audio-volume-high.svg" alt="Volume" width="64" height="64">
+        <img src="assets/showcase/svg/battery-good.svg" alt="Battery" width="64" height="64">
+        <img src="assets/showcase/svg/system-shutdown.svg" alt="Shut down" width="64" height="64">
+      </div>
+      <div class="label wrap">
+        <p class="eyebrow">Real files, not a mockup</p>
+        <h2>Almond Pure icons</h2>
+        <p class="muted">Flat, warm and readable down to sixteen pixels. Every icon here is drawn from the Almond Pure icon theme.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="moods" data-p aria-label="Three moods">
+    <div class="stage">
+      <div class="head wrap">
+        <p class="eyebrow">Wallpapers · Almond Pure</p>
+        <h2>Three moods. Your choice.</h2>
+      </div>
+      <div class="track" id="track">
+        <article class="mood">
+          <div class="pic"><img src="assets/showcase/svg/almond-pure-light.svg" alt="Almond Pure Light wallpaper: golden leaves on cream" width="1920" height="1080" loading="lazy"></div>
+          <div class="meta"><h3>Light</h3><div class="swatches" aria-hidden="true"><span style="background:#f5deb3"></span><span style="background:#d2a679"></span><span style="background:#8b5a2b"></span></div></div>
+        </article>
+        <article class="mood">
+          <div class="pic"><img src="assets/showcase/svg/almond-pure-dark.svg" alt="Almond Pure Dark wallpaper: brown leaves on dark brown" width="1920" height="1080" loading="lazy"></div>
+          <div class="meta"><h3>Dark</h3><div class="swatches" aria-hidden="true"><span style="background:#2b2118"></span><span style="background:#202125"></span><span style="background:#d2a679"></span></div></div>
+        </article>
+        <article class="mood">
+          <div class="pic"><img src="assets/showcase/svg/almond-pure-ocean.svg" alt="Almond Pure Ocean wallpaper: blue leaves on deep blue" width="1920" height="1080" loading="lazy"></div>
+          <div class="meta"><h3>Ocean</h3><div class="swatches" aria-hidden="true"><span style="background:#1e2c3b"></span><span style="background:#2f5a8a"></span><span style="background:#4b7cb8"></span></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="specs" id="specs">
+    <div class="wrap">
+      <div class="top">
+        <p class="eyebrow">AALDM · Almond 0.1 ‘Marcona’</p>
+        <h2>Specifications</h2>
+        <p class="muted">Measured on the first test build, 17 October 2026, in a VirtualBox virtual machine (<a href="https://github.com/AlmondLinux/almond-linux/blob/ai-bridge/phase-1/tests/results/2026-10-17-vm/RESULTS.md">test report</a>). It is an experiment: not released, and not yet tried on a real PC.</p>
+      </div>
+      <dl class="ledger">
+        <div class="row"><dt>Base</dt><dd>Debian 13 ‘trixie’<small>Debian Stable, with Debian’s security updates</small></dd></div>
+        <div class="row"><dt>Desktop</dt><dd>LXQt with Openbox<small>On X11, with no compositor and no animations</small></dd></div>
+        <div class="row"><dt>Boots on</dt><dd>BIOS and UEFI<small>Both tested in a virtual machine</small></dd></div>
+        <div class="row"><dt>For</dt><dd>64-bit PCs<small>Older and low-power machines are the target</small></dd></div>
+        <div class="row"><dt>Image size</dt><dd>845 MB<small>live-image-amd64.hybrid.iso, one file for USB or DVD</small></dd></div>
+        <div class="row"><dt>Memory at rest</dt><dd>413 MiB used<small>2 GB virtual machine, desktop idle. Goal: under 300 MB. Not there yet.</small>
+          <div class="meter" role="img" aria-label="413 MiB measured against a 300 MB goal"><i style="width:68.9%"></i><b style="left:50%"></b></div></dd></div>
       </dl>
     </div>
   </section>
 
-  <section class="split s57" aria-labelledby="h-editions">
-    <div class="field cream">
-      <p class="kicker">03 · editions</p>
-      <h2 id="h-editions">Two editions, one Almond</h2>
-      <p class="lead">A new PC and a ten-year-old laptop deserve different systems. Almond is planned in two editions, built from the same base and the same values.</p>
-      <p>AALDM is in progress as 0.1 ‘Marcona’, and its first test ISO has booted in a virtual machine. AALLDM’s visual design is approved, but no AALLDM system has been built. The details below will only firm up as the work does.</p>
-    </div>
-    <div class="field dark">
-      <div class="edition">
-        <p class="cap">Edition · large</p>
-        <p class="acro">AALLDM</p>
+  <section class="large" id="aalldm" data-p>
+    <div class="stage">
+      <div class="ghost" aria-hidden="true">AALLDM</div>
+      <div class="copy wrap">
+        <p class="eyebrow">Edition two · designed, not yet built</p>
+        <h2>AALLDM</h2>
         <p class="expansion">A All Large Linux Distribution Model</p>
-        <p>The full Almond: a bigger, more modern desktop for newer PCs, with room for the nicer touches.</p>
-        <dl class="ledger">
-          <div><dt>for</dt><dd>newer PCs</dd></div>
-          <div><dt>desktop</dt><dd>not chosen yet</dd></div>
-          <div><dt>status</dt><dd>design approved · no ISO</dd></div>
-        </dl>
-      </div>
-      <div class="edition">
-        <p class="cap">Edition · little</p>
-        <p class="acro">AALDM</p>
-        <p class="expansion">A All Little Distribution Model</p>
-        <p>The light Almond: made for older and low-power PCs. The aim is a system that stays quick on hardware other systems have left behind. It is the edition being built first.</p>
-        <dl class="ledger">
-          <div><dt>for</dt><dd>older and low-power 64-bit PCs</dd></div>
-          <div><dt>desktop</dt><dd>LXQt + Openbox</dd></div>
-          <div><dt>status</dt><dd>in progress · test ISO only</dd></div>
-        </dl>
+        <p class="lede">The full Almond for newer PCs: a bigger, more modern desktop with room for the nicer touches.</p>
+        <p class="muted">Its visual design, Almond Fusion, was approved on 18 October 2026. Building it starts after AALDM.</p>
       </div>
     </div>
   </section>
 
-  <section class="split s48 dark roadmap" aria-labelledby="h-road">
-    <div class="field wide">
-      <p class="kicker">04 · roadmap</p>
-      <h2 id="h-road">Development roadmap</h2>
-      <p>Five steps, from a first bootable image to a stable release. Each named release takes its codename from a Spanish almond variety. Nothing here is marked done, because nothing is done yet.</p>
-    </div>
-    <div class="field rl">
-      <div class="cols" aria-hidden="true"><span>version</span><span>milestone</span><span>status</span></div>
-      <ol class="road">
-        <li class="cur">
-          <span class="ver">Almond 0.1 <span class="code">‘Marcona’</span></span>
-          <span class="what">First bootable Debian-based ISO</span>
-          <span class="state"><span class="vh">Status: </span>In progress</span>
-          <span class="det">First test ISO built and booted in a VirtualBox virtual machine on 17 October 2026. Still to do: a real PC, the full memory measurements and the remaining checks.</span>
-        </li>
-        <li>
-          <span class="ver">Almond 0.2 <span class="code">‘Largueta’</span></span>
-          <span class="what">Custom Almond branding, wallpaper, themes, and system identity</span>
-          <span class="state"><span class="vh">Status: </span>Planned</span>
-        </li>
-        <li>
-          <span class="ver">Almond 0.3 <span class="code">‘Valencia’</span></span>
-          <span class="what">Customized desktop experience</span>
-          <span class="state"><span class="vh">Status: </span>Planned</span>
-        </li>
-        <li>
-          <span class="ver">Almond 0.5</span>
-          <span class="what">Graphical installer and testing</span>
-          <span class="state"><span class="vh">Status: </span>Planned</span>
-        </li>
-        <li>
-          <span class="ver">Almond 1.0</span>
-          <span class="what">First stable public release</span>
-          <span class="state"><span class="vh">Status: </span>Planned</span>
-        </li>
-      </ol>
-    </div>
-    <div class="field notes">
-      <h3>The plan for 0.1</h3>
-      <ul>
-        <li>Base: Debian Stable, currently Debian 13 ‘trixie’.</li>
-        <li>Built with Debian live-build.</li>
-        <li>First edition: AALDM, for 64-bit PCs. The plan is one ISO for both older BIOS PCs and newer UEFI PCs.</li>
-        <li>Desktop: LXQt with the Openbox window manager on X11, chosen to keep memory use low.</li>
-        <li>Goals: under 300 MB of memory when idle, and PCs with 1 GB where feasible. Targets, not measurements.</li>
-        <li>Tested in virtual machines before it goes near real hardware.</li>
-      </ul>
-      <h3>After 1.0: going independent</h3>
-      <p>Debian is the starting point, not the destination. Step by step, Almond plans to replace what it borrows:</p>
-      <ol class="steps">
-        <li>An Almond package repository for Almond’s own software.</li>
-        <li>Building packages from source on Almond’s own build system.</li>
-        <li>A fully independent Almond, no longer based on Debian.</li>
-      </ol>
-      <p>This is a long-term goal. No dates are promised.</p>
-      <p><a href="development.html">Full roadmap and technical direction</a></p>
+  <section class="story story-large" aria-label="Almond Fusion, the look of AALLDM">
+    <div class="wrap grid">
+      <div class="steps">
+        <article class="step" data-shot="0" data-name="AALLDM desktop · Almond Launch">
+          <p class="num">AALLDM · THE DESKTOP</p>
+          <h3>Room for everything.</h3>
+          <p>A wider desktop for newer PCs: the launcher, a side dock, Files with a preview panel, and quiet widgets for the weather, music and the week ahead.</p>
+          <figure class="inline-shot"><span class="chip">Design concept</span><img src="assets/showcase/img/aalldm-mountain.webp" alt="Design concept: the AALLDM desktop with Almond Launch, widgets, a side dock and Files" width="1672" height="941" loading="lazy"></figure>
+        </article>
+        <article class="step" data-shot="1" data-name="Almond Fusion">
+          <p class="num">ALMOND FUSION</p>
+          <h3>Powerful. Fluid. Personal.</h3>
+          <p>Almond Fusion is the AALLDM look: dark panels, warm light and a dock you can reach from anywhere. Files sits in the middle, the widgets keep to the edge.</p>
+          <figure class="inline-shot"><span class="chip">Design concept</span><img src="assets/showcase/img/aalldm-fusion.webp" alt="Design concept: Almond Fusion with clock, weather, system and notes widgets beside Almond Files" width="1672" height="516" loading="lazy"></figure>
+        </article>
+        <article class="step" data-shot="2" data-name="Almond Files Pro · Explore">
+          <p class="num">ALMOND FILES PRO · EXPLORE</p>
+          <h3>Browse naturally.</h3>
+          <p>Places, Recent and Browse live in one header, so the folders get the whole window.</p>
+          <figure class="inline-shot"><span class="chip">Design concept</span><img src="assets/showcase/img/files-pro-explore.webp" alt="Design concept: Almond Files Pro, Explore view" width="736" height="884" loading="lazy"></figure>
+        </article>
+        <article class="step" data-shot="3" data-name="Almond Files Pro · Select">
+          <p class="num">ALMOND FILES PRO · SELECT</p>
+          <h3>Tools when you need them.</h3>
+          <p>Copy, Move, Rename, Delete and Share only appear once something is selected, each with a keyboard shortcut.</p>
+          <figure class="inline-shot"><span class="chip">Design concept</span><img src="assets/showcase/img/files-pro-select.webp" alt="Design concept: Almond Files Pro, two folders selected with file actions shown" width="736" height="884" loading="lazy"></figure>
+        </article>
+        <article class="step" data-shot="4" data-name="Almond Files Pro · Personalize">
+          <p class="num">ALMOND FILES PRO · PERSONALIZE</p>
+          <h3>Arranged your way.</h3>
+          <p>Compact or horizontal navigation, floating or header actions, icon size and folder colours, with a live preview and a reset to default.</p>
+          <figure class="inline-shot"><span class="chip">Design concept</span><img src="assets/showcase/img/files-pro-personalize.webp" alt="Design concept: Almond Files Pro personalisation panel with a live preview" width="736" height="884" loading="lazy"></figure>
+        </article>
+      </div>
+      <div class="frame-col" aria-hidden="true">
+        <div class="frame">
+          <span class="chip">Design concept</span>
+          <div class="screen">
+            <img class="on" src="assets/showcase/img/aalldm-mountain.webp" alt="" width="1672" height="941">
+            <img class="contain" src="assets/showcase/img/aalldm-fusion.webp" alt="" width="1672" height="516">
+            <img class="contain panel" src="assets/showcase/img/files-pro-explore.webp" alt="" width="736" height="884">
+            <img class="contain panel" src="assets/showcase/img/files-pro-select.webp" alt="" width="736" height="884">
+            <img class="contain panel" src="assets/showcase/img/files-pro-personalize.webp" alt="" width="736" height="884">
+          </div>
+          <p class="caption">AALLDM desktop · Almond Launch</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <div class="split s57">
-    <section class="field cream" aria-labelledby="h-dl">
-      <p class="kicker">05 · downloads</p>
-      <h2 id="h-dl">Downloads</h2>
-      <p class="big">Almond Linux is currently in development. No official ISO is available yet.</p>
-      <p>When a release exists it will be published here and on GitHub, with checksums. Until then, any file calling itself an Almond Linux ISO did not come from this project.</p>
-      <p><a href="downloads.html">See both editions on the downloads page</a></p>
-    </section>
-    <section class="field paper drop" aria-labelledby="h-os">
-      <p class="kicker">06 · open source</p>
-      <h2 id="h-os">Open source</h2>
-      <p class="lead">Almond is developed in the open: its build configuration and this website are published on GitHub for anyone to read.</p>
-      <p>It builds on free and open-source software, mainly Debian packages, and every upstream component keeps its own license and copyright. Almond does not claim ownership of any upstream software.</p>
-      <p>Almond’s own files are released under the MIT License. The Almond Linux name and logo are not covered by it.</p>
-      <p><a href="docs.html#license">License information</a></p>
-    </section>
-  </div>
-
-  <section class="split s57" aria-labelledby="h-join">
-    <div class="field cream">
-      <img class="lockup" src="assets/images/almond-logo.png" width="480" height="575" alt="">
-    </div>
-    <div class="field dark">
-      <p class="kicker">07 · get involved</p>
-      <h2 id="h-join">Get involved</h2>
-      <p class="lead">Almond is developed in the open on GitHub.</p>
-      <p>The main repository is <a href="https://github.com/AlmondLinux/almond-linux" class="mono">github.com/<wbr>AlmondLinux/<wbr>almond-linux</a>. Its contribution guidelines explain how to help, and its issue tracker is the place for questions and bug reports.</p>
-      <p>The easiest way to follow along is to watch the repository on GitHub.</p>
-      <a class="btn" href="https://github.com/AlmondLinux/almond-linux"><span>Follow Almond on GitHub</span> <span class="arr" aria-hidden="true">→</span></a>
+  <section class="close">
+    <div class="wrap inner">
+      <img src="assets/showcase/svg/almond-mark-mono-light.svg" alt="" width="56" height="82">
+      <h2>Simple. Powerful. <em>Yours.</em></h2>
+      <p class="muted">Almond Linux is an independent project, built in the open.</p>
+      <div class="actions">
+        <a class="btn solid" href="https://github.com/AlmondLinux/almond-linux">Follow on GitHub</a>
+        <a class="btn line" href="https://almondlinux.github.io">Visit almondlinux.github.io</a>
+      </div>
     </div>
   </section>
-
 </main>
 
-<footer class="split s57 dark foot">
-  <div class="field">
-    <p class="fname">Almond Linux</p>
-    <p class="mono">AALLDM / AALDM</p>
-    <dl class="expand">
-      <div><dt>AALLDM</dt><dd>A All Large Linux Distribution Model</dd></div>
-      <div><dt>AALDM</dt><dd>A All Little Distribution Model</dd></div>
-    </dl>
-  </div>
-  <div class="field">
-    <ul class="flinks">
-      <li><a href="https://github.com/AlmondLinux">GitHub organisation</a></li>
-      <li><a href="docs.html#license">License information</a></li>
-      <li><a href="docs.html#contact">Contact</a></li>
-    </ul>
-    <p>Almond Linux is an independent project and is not affiliated with Debian, Canonical, Red Hat, AlmaLinux, or any other Linux organization.</p>
-    <p>This site uses no cookies, analytics or trackers.</p>
-    <p class="legal">Linux® is the registered trademark of Linus Torvalds in the U.S. and other countries. Debian is a registered trademark owned by Software in the Public Interest, Inc.</p>
+<footer class="site-foot">
+  <div class="wrap">
+    <p class="names">Almond Linux · AALLDM / AALDM</p>
+    <nav aria-label="Site">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="development.html">Development</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="docs.html">Documentation</a></li>
+        <li><a href="docs.html#license">License information</a></li>
+        <li><a href="docs.html#contact">Contact</a></li>
+        <li><a href="https://github.com/AlmondLinux">GitHub</a></li>
+        <li><a href="classic.html">Previous homepage</a></li>
+      </ul>
+    </nav>
+    <div class="legal">
+      <p>Desktop pictures marked “Design concept” are design mockups, not screenshots. The icons and wallpapers are real Almond files. Almond Linux 0.1 ‘Marcona’ is in development; nothing has been released yet.</p>
+      <p>Almond Linux is an independent project and is not affiliated with Debian, Canonical, Red Hat, AlmaLinux, or any other Linux organization. This site uses no cookies, analytics or trackers.</p>
+      <p>Linux® is the registered trademark of Linus Torvalds in the U.S. and other countries. Debian is a registered trademark owned by Software in the Public Interest, Inc.</p>
+    </div>
   </div>
 </footer>
 </body>

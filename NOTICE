@@ -7,10 +7,13 @@ not cover:
   almond-mark.png, almond-mark-header.png, og-image.png, favicon-32.png,
   apple-touch-icon.png, icon-192.png, icon-512.png, and at the site root
   favicon.ico, favicon.svg, safari-pinned-tab.svg, apple-touch-icon.png and
-  apple-touch-icon-precomposed.png), which identify the project and are
+  apple-touch-icon-precomposed.png, plus the logo copies assets/showcase/svg/almond-mark*.svg), which identify the project and are
   not licensed for reuse under the terms above. The Almond Pure icons in
   assets/images/almond-pure/ are copies of MIT-licensed files from
   AlmondLinux/almond-linux (desktop/icons/Almond-Pure/) and ARE covered;
+- the design-concept pictures in assets/showcase/img/ (design mockups of the
+  Almond Pure desktop, shown as concepts, not screenshots);
 - the fonts in assets/fonts/, which keep their own licenses (SIL Open Font
-  License 1.1 for Young Serif and Atkinson Hyperlegible; the Bitstream Vera and
+  License 1.1 for Young Serif, Atkinson Hyperlegible, Newsreader and Hanken
+  Grotesk; the Bitstream Vera and
   Arev font licenses for DejaVu Sans Mono). See assets/fonts/README.md.
